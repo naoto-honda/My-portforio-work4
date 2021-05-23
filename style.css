@@ -423,6 +423,11 @@ footer {
   }
   /* 「ハンバーガーメニュー」終わり */
 
+  /* メイン画像 */
+  .main-visual {
+    background-image: url(img/fv-bgi_sp@2x.jpg);
+  }
+
   /* service始まり */
   div.service {
     flex-direction: column;
