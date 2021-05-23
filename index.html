@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コーディング課題01</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="container">
+    <div class="title">
+      <h1>クリ★スタ</h1>
+    </div>
+    <div class="nav-wrapper">
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Service</a></li>
+          <li class="nav-item"><a href="#">News</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="burger-btn">
+      <span class="bars">
+        <span class="bar bar_top"></span>
+        <span class="bar bar_mid"></span>
+        <span class="bar bar_bottom"></span>
+      </span>
+    </div>
+  </header>
+  <main>
+    <div class="main-visual">
+      <h2>Cresta Design.</h2>
+    </div>
+    <section class="about container">
+      <h3>About</h3>
+      <h4>
+        ミニマルで<br>
+        洗練されたデザインを。
+      </h4>
+      <p class="desc">
+        近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行った上でご提案させていただきます。
+      </p>
+    </section>
+    <section class="service container">
+      <h3>Service</h3>
+      <div class="services">
+        <div class="service">
+          <img src="img/service-image@2x.jpg">
+          <div class="text">
+            <h4>リリース時のサポートで<br>サービスのブランディングを</h4>
+            <p class="desc">弊社では、リリース時もサポートさせていただきます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+          </div>
+        </div>
+        <div class="service">
+          <img src="img/service-image02@2x.jpg">
+          <div class="text">
+            <h4>リリース後のサポートで<br>効果を最大化させる</h4>
+            <p class="desc">弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news container">
+      <h3>News</h3>
+      <ul class="news">
+        <li>
+          <a href="#">
+            <img src="img/card-image1@2x.jpg">
+            <p class="desc">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+          <img src="img/card-image2@2x.jpg">
+          <p class="desc">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+          <img src="img/card-image3@2x.jpg">
+          <p class="desc">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="form container">
+      <h3>お問い合わせ</h3>
+      <form>
+        <div class="form-content">
+          <label for="name">担当者名</label>
+          <input name="name" type="text" id="name">
+        </div>
+        <div class="form-content">
+          <label for="tel">電話番号</label>
+          <input name="tel" type="text" id="tel">
+        </div>
+        <div class="form-content">
+          <label for="email">メールアドレス</label>
+          <input name="email" type="text" id="email">
+        </div>
+        <div class="form-content">
+          <label for="message">お問い合わせ内容</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <div class="button">
+          <input type="submit" value="送信">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;cresta.design all rights reserved</p>
+  </footer>
+</body>
+</html>

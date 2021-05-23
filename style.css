@@ -1,0 +1,465 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* リセットCSSここまで */
+
+body.noscroll{
+  overflow: hidden;
+}
+
+html {
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  display: inline-block;
+}
+
+/* ヘッダー始まり */
+header {
+  color: #fff;
+  background-color: #1B1310;
+  border-bottom: 1px solid #fff;
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: #fff;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.nav-list{
+  /* navの横並び */
+  display: flex;
+}
+.nav-item{
+  /* メニューの右側に余白 */
+  margin-right: 50px;
+  font-size: 1.2rem;
+}
+
+.burger-btn{
+  display: none;
+}
+/* ヘッダー終わり */
+
+/* メイン画像始まり
+ */
+.main-visual {
+    height:90vh;
+    background-image: url(img/fv-bgi@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+
+.main-visual h2 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+  border:2px solid #fff;
+  padding: 34px 42px;
+}
+/* メイン画像終わり */
+
+/* セクションタイトル(h3)共通 */
+h3 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* about始まり */
+section.about {
+  margin: 0 10%;
+  text-align: left;
+  margin-bottom: 150px;
+}
+
+/* (h4)共通 */
+h4 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  margin-bottom: 25px;
+}
+
+/* p.desc共通 */
+p.desc {
+  letter-spacing: 2px;
+  line-height: 2rem;
+  font-weight: bold;
+}
+/* about終わり */
+
+/* service始まり */
+section.service {
+  margin-bottom: 150px;
+  margin: 0 5%;
+}
+
+div.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+div.service:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+div.service img {
+  width: 50%;
+  min-width: 300px;
+  margin-right: 50px;
+}
+
+div.service .text {
+  width: 50%;
+}
+
+div.service:nth-child(2n) img {
+  margin: 0 0 0 50px;
+}
+/* service終わり */
+
+/* news始まり */
+section.news {
+  margin: 0 5% 150px;
+}
+
+ul.news {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+ul.news li {
+  width: 30%;
+  border: 1px solid #ccc;
+}
+
+ul.news li a {
+  color: black;
+  display: block;
+}
+
+ul.news li img {
+  height: 70%
+}
+
+ul.news li p.desc {
+  padding: 20px;
+}
+/* news終わり */
+
+/* 「お問い合わせ」始まり */
+form {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto 50px;
+}
+
+.form-content {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.button {
+  text-align: center;
+}
+
+input[type="submit"] {
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #1B1310;
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 50px;
+  margin-top: 20px;
+  max-width: 150px;
+}
+/* 「お問い合わせ」終わり */
+
+/* フッター始まり */
+footer {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #1B1310;
+  color: #fff;
+}
+/* フッター終わり */
+
+@media screen and (max-width: 600px) {
+
+  /* 「ハンバーガーメニュー」始まり */
+  .burger-btn{
+    display: block;      
+    width: 39px;      
+    height: 39px;      
+    position: relative;      
+    z-index: 3;
+    background-color:transparent;
+    border:none;    
+    margin-top: 13px;
+  }    
+
+  .bar {      
+    width: 20px;      
+    height: 2px;        
+    display: block;      
+    position: absolute;      
+    left: 50%;      
+    transform: translateX(-50%);      
+    background-color: #fff;    
+  }    
+
+  .bar_top {   
+    top: 10px;
+  }
+
+  .bar_mid {    
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .bar_bottom {
+    bottom: 10px;
+  }
+
+  .burger-btn.close .bar_top{      
+    transform: translate(-50%,10px) rotate(45deg);      
+    transition: transform .3s;    
+  }    
+
+  .burger-btn.close .bar_mid{      
+    opacity: 0;       
+    transition: opacity .3s;    
+  }    
+
+  .burger-btn.close .bar_bottom{      
+  transform: translate(-50%,-8px) rotate(-45deg);      
+  transition: transform .3s;    
+  }
+
+  .nav-wrapper{      
+    display: none;
+    width: 100vw;      
+    height: 100vh;      
+    position: fixed;      
+    top: 0;      
+    left: 0;       
+    z-index: 2;     
+  }     
+
+  .header-nav{        
+    width: 100%;        
+    height: 100%;        
+    background-color:#1B1310;        
+    z-index: 2;      
+  }     
+
+  .header-nav .nav-list{        
+    display: block;       
+    position: absolute;        
+    top: 50%;        
+    left: 50%;        
+    transform: translate(-50%,-50%);        
+    text-align: center;      
+  }      
+
+  .header-nav.nav-item{        
+    margin-right: 0;        
+    margin-bottom: 40px;      
+  }
+  /* 「ハンバーガーメニュー」終わり */
+
+  /* service始まり */
+  div.service {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  div.service .text {
+    width: 100%;
+  }
+
+  div.service:nth-child(2n) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.service img {
+    margin: 0 auto 40px;
+    width: 100%;
+  }
+
+  div.service:nth-child(2n) img {
+    margin: 0 auto 40px;
+  }
+  /* service終わり */
+
+  /* news始まり */
+  ul.news {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.news li {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  /* news終わり */
+}
